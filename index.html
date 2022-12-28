@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <title>PCS</title>
+  </head>
+  <body>
+    <div class="dg_header">
+      <img src="img/image_intro.jpg" alt="mycie_posadzki" />
+    </div>
+    <div class="container_wrapper">
+      <header class="header">
+        <div class="header_header">
+          <img src="img/logo.png" alt="logo_pcs" class="header_logo" />
+          <div class="header_nav">
+            <button class="header_nav_btn">Oferta</button>
+            <button class="header_nav_btn">O Nas</button>
+            <button class="header_nav_btn">Blog</button>
+            <button class="header_nav_btn">Opinie</button>
+            <button class="header_nav_btn">Kontakt</button>
+          </div>
+          <div class="contact_tel_header">
+            <div>
+              <img src="img/telephone_icon.png" alt="" /><a
+                href="tel:+48 600 88 99 33"
+                >+48 600 88 99 33</a
+              >
+            </div>
+            <div>
+              <img src="img/telephone_icon.png" alt="" /><a
+                href="tel:+48 600 00 17 12"
+                >+48 600 00 17 12</a
+              >
+            </div>
+          </div>
+        </div>
+        <h1>Usługi sprzątania w Opolu i województwie Opolskim!</h1>
+        <span class="header_span">Zaufaj profesjonalistoms</span>
+        <button class="button_header">Zamówić usługę</button>
+      </header>
+      <section class="section_ofers">
+        <h2>Oferta</h2>
+        <img
+          src="img/bg_vector_1.png"
+          alt="bg_vector"
+          class="bg_vector bg_vector_1"
+        />
+        <img
+          src="img/bg_vector_2.png"
+          alt="bg_vector"
+          class="bg_vector bg_vector_2"
+        />
+        <div class="ofers_wrapper">
+          <div class="ofer_card" id="ofer_card_0">
+            <img
+              src="img/sprzątanie_po_remoncie.png"
+              alt="Sprzątanie po remoncie"
+              class="ofer_card_img"
+            />
+            <span class="ofet_card_span">Sprzątanie po remoncie</span>
+            <button class="ofer_card_btn">więcej</button>
+          </div>
+          <div class="ofer_card" id="ofer_card_1">
+            <img
+              src="img/mycie_okien.png"
+              alt="Mycie okien"
+              class="ofer_card_img"
+            />
+            <span class="ofet_card_span">Mycie okien</span>
+            <button class="ofer_card_btn">więcej</button>
+          </div>
+          <div class="ofer_card" id="ofer_card_2">
+            <img
+              src="img/sprzątanie_ogólne.png"
+              alt="Sprzątanie ogólne"
+              class="ofer_card_img"
+            />
+            <span class="ofet_card_span">Sprzątanie ogólne</span>
+            <button class="ofer_card_btn">więcej</button>
+          </div>
+          <div class="ofer_card" id="ofer_card_3">
+            <img
+              src="img/sprzątanie_biur.png"
+              alt="Sprzątanie biur"
+              class="ofer_card_img"
+            />
+            <span class="ofet_card_span">Sprzątanie biur</span>
+            <button class="ofer_card_btn">więcej</button>
+          </div>
+          <div class="ofer_card" id="ofer_card_4">
+            <img
+              src="img/sprzątanie_pomieszczeń.png"
+              alt="Sprzątanie pomieszczeń"
+              class="ofer_card_img"
+            />
+            <span class="ofet_card_span">Sprzątanie pomieszczeń</span>
+            <button class="ofer_card_btn">więcej</button>
+          </div>
+          <div class="ofer_card" id="ofer_card_5">
+            <img
+              src="img/sprzątanie_ekspresowe.png"
+              alt="Sprzątanie ekspresowe"
+              class="ofer_card_img"
+            />
+            <span class="ofet_card_span">Sprzątanie ekspresowe</span>
+            <button class="ofer_card_btn">więcej</button>
+          </div>
+        </div>
+      </section>
+      <section class="section_action">
+        <h3 class="section_action_title">
+          Potrzebujesz sprzątania mieszkania lub lokalu użytkowego?
+        </h3>
+        <div class="order_service_wrapper">
+          <div class="order_service">
+            <div class="order_overlay"></div>
+            <form action="" class="contact_form_actions">
+              <input
+                type="text"
+                placeholder="Imię"
+                class="contacts_input_actions"
+              />
+              <input
+                type="number"
+                placeholder="Numer kontaktowy"
+                class="contacts_input_actions"
+              />
+            </form>
+            <button class="order_service_btn button_header">
+              Zamówić usługę
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section_faq">
+        <h2 class="title_section_faq">
+          Odpowiedzi na popularne pytania naszych klientów
+        </h2>
+        <img
+          src="img/pcs_img.png"
+          alt="Konserwacja powierzchni"
+          class="section_faq_img"
+        />
+        <img
+          src="img/bg_vector_3.png"
+          alt="bg_vector"
+          class="bg_vector bg_vector_3"
+        />
+        <img
+          src="img/bg_vector_4.png"
+          alt="bg_vector"
+          class="bg_vector bg_vector_4"
+        />
+        <div class="faq_card_wrapper">
+          <div class="faq_card">
+            <div class="faq_card_question">
+              Oprócz sprzątania, trzeba też umyć okna. Czy możecie to zrobić?
+            </div>
+            <div class="faq_card_answer">
+              Tak, osoby sprzątające w naszej firmie wykonują mycie okien.
+              Wystarczy poinformować pracownika firmy przy składaniu wniosku.
+              Należy pamiętać, że usługa ta jest świadczona za dodatkową opłatą.
+            </div>
+          </div>
+          <div class="faq_card">
+            <div class="faq_card_question">Jak długo trwa sprzątanie?</div>
+            <div class="faq_card_answer">
+              Profesjonalne sprzątanie mieszkania jednopokojowego - 2 godziny;
+              mieszkania dwupokojowego - 2-3 godziny; mieszkania trzypokojowego
+              - 3 godziny. Apartamenty czteropokojowe, domy prywatne i domki
+              letniskowe - od 4 godz.
+            </div>
+          </div>
+          <div class="faq_card">
+            <div class="faq_card_question">
+              Czy mogę zamówić sprzątanie już dziś?
+            </div>
+            <div class="faq_card_answer">
+              Jeśli są wolni pracownicy, możemy wysłać specjalistę w dniu
+              zgłoszenia. Ale i tak zalecamy pozostawienie prośby o usługę
+              (Opole), z wyprzedzeniem - 1 dzień przed wymaganą datą, ponieważ
+              nie zawsze jest możliwe wysłanie pracownika "na już" .
+            </div>
+          </div>
+          <div class="faq_card">
+            <div class="faq_card_question">Ile osób wykonuje sprzątanie?</div>
+            <div class="faq_card_answer">
+              Liczba osób sprzątających ustalana jest w oparciu o skalę i
+              złożoność prac. Sam zespół jest tworzony w zależności od
+              charakterystyki obiektu
+            </div>
+          </div>
+          <div class="faq_card">
+            <div class="faq_card_question">
+              Czy istnieje możliwość zawarcia umowy na regularne sprzątanie?
+            </div>
+            <div class="faq_card_answer">
+              Oczywiście specjalista naszej firmy sprzątającej w Opolu może
+              przyjechać codziennie, 1 lub 2 razy w tygodniu, a także w
+              weekendy. Dodatkowo przy zamówieniu usług regularnych przewidziane
+              są rabaty.
+            </div>
+          </div>
+          <div class="faq_card">
+            <div class="faq_card_question">
+              Czy muszę kupić chemię gospodarczo-chemiczną, czy wszystko
+              przywieziecie?
+            </div>
+            <div class="faq_card_answer">
+              Nie ma potrzeby dodatkowego zakupu detergentów. Nasza firma
+              sprzątająca przywiezie wszystkie środki chemii gospodarczej oraz
+              inne sprzęty niezbędne do sprzątania.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <h2 class="benefits_section_title">kroków do czystości</h2>
+        <span class="benefits_section_span">6</span>
+        <div class="benefits_cards_wrapper">
+          <div class="benefits_card">
+            <div class="benefits_card_title">
+              <img src="img/h3_before.png" alt="" />
+              <div class="benefits_card_title_text">Wykwalifikowana kadra</div>
+            </div>
+            <div class="benefits_card_text">
+              Od złożenia zamówienia do zakończenia pracy z Państwem będą
+              współpracować profesjonaliści.
+            </div>
+          </div>
+          <div class="benefits_card">
+            <div class="benefits_card_title">
+              <img src="img/Płatność za wynik.png" alt="Płatność za wynik" />
+              <div class="benefits_card_title_text">Płatność za wynik</div>
+            </div>
+            <div class="benefits_card_text">
+              Pracujemy bez przedpłat, płatność następuje dopiero po zakończeniu
+              sprzątania i odbiorze prac przez Klienta.
+            </div>
+          </div>
+          <div class="benefits_card">
+            <div class="benefits_card_title">
+              <img
+                src="img/Indywidualne podejście.png"
+                alt="Indywidualne podejście"
+              />
+              <div class="benefits_card_title_text">Indywidualne podejście</div>
+            </div>
+            <div class="benefits_card_text">
+              Państwo określają strefy i obiekty sprzątania, a my za darmo
+              wysyłamy specjalistę, który oceni obiekt, zaleci i sporządzi
+              kosztorys.
+            </div>
+          </div>
+          <div class="benefits_card">
+            <div class="benefits_card_title">
+              <img
+                src="img/Skuteczność i szybkość.png"
+                alt="Skuteczność i szybkość"
+              />
+              <div class="benefits_card_title_text">Skuteczność i szybkość</div>
+            </div>
+            <div class="benefits_card_text">
+              Pracujemy w Opolu i na terenie województwa, zapewniając klientom
+              szybką wycenę.
+            </div>
+          </div>
+          <div class="benefits_card">
+            <div class="benefits_card_title">
+              <img
+                src="img/Gwarancja jakości i bezpieczeństwa.png"
+                alt="Gwarancja jakości i bezpieczeństwa"
+              />
+              <div class="benefits_card_title_text">
+                Gwarancja jakości i bezpieczeństwa
+              </div>
+            </div>
+            <div class="benefits_card_text">
+              Nasze sprzątanie odbywa się według ściśle określonego harmonogramu
+              prac. Wszyscy nasi specjaliści są dokładnie sprawdzani zarówno pod
+              kątem cech zawodowych, jak i rzetelności. Potwierdzeniem jest
+              informacja zwrotna od każdego z naszych klientów.
+            </div>
+          </div>
+          <div class="benefits_card">
+            <div class="benefits_card_title">
+              <img
+                src="img/Profesjonalny sprzęt i zasady eko-sprzątania.png"
+                alt="Profesjonalny sprzęt i zasady eko-sprzątania"
+              />
+              <div class="benefits_card_title_text">
+                Profesjonalny sprzęt i zasady eko-sprzątania
+              </div>
+            </div>
+            <div class="benefits_card_text">
+              Zapewniamy wysoką jakość naszych usług dzięki nowoczesnym metodom
+              ECO sprzątania, stosując nowe narzędzia Karcher oraz wyłącznie
+              hipoalergiczne produkty ECO.
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="contacts">
+          <div class="contacts_map">
+            <div id="map"></div>
+            <div id="decorative-map" inert></div>
+          </div>
+          <div class="contacts_mail">
+            <h2>Formularz kontaktowy</h2>
+            <form action="mail.php" method="POST" class="contact_form">
+              <div class="contact_box">
+                <input
+                  type="text"
+                  placeholder="Imię i nazwisko (wymagane)"
+                  class="contacts_input"
+                  name="user_name"
+                  id="name"
+                  data-reg="^[A-Z][a-z]*$"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Adres email (wymagane)"
+                class="contacts_input"
+                name="user_email"
+                id="email"
+                data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+              />
+              <input
+                type="number"
+                placeholder="Numer kontaktowy"
+                class="contacts_input"
+                name="user_phone"
+                id="phone"
+                data-reg="^\d{9}$"
+              />
+              <input
+                type="text"
+                placeholder="Treść wiadomości"
+                class="contacts_input"
+                name="user_mail"
+              />
+              <button type="submit" class="contact_btn">Wyślij</button>
+            </form>
+
+            <p class="submit_p">
+              Dziękujemy za kontakt z nami! Wkrótce otrzymasz odpowiedź.
+            </p>
+            <div class="mail">
+              <img src="img/email_icon.png" alt="mail_pcs" />
+              <a href="mailto:michal@lyka.pl">michal@lyka.pl</a>
+            </div>
+            <div class="contact_tel">
+              <div>
+                <img src="img/telephone_icon.png" alt="" /><a
+                  href="tel:+48 600 88 99 33"
+                  >+48 600 88 99 33</a
+                >
+              </div>
+              <div>
+                <img src="img/telephone_icon.png" alt="" /><a
+                  href="tel:+48 600 00 17 12"
+                  >+48 600 00 17 12</a
+                >
+              </div>
+            </div>
+            <div class="locate">
+              <img src="img/locate_icon.png" alt="locate_pcs" />
+              <p>Krzemieniecka 8, <br />45-401 Opole</p>
+            </div>
+            <div class="rectangle_contacts"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button class="btn_scroll_top">
+      <img src="img/arrow_ic.png" alt="arrow" class="btn_scroll_top_img" />
+    </button>
+    <div class="dg_section_action">
+      <img src="img/image_intro.jpg" alt="" />
+    </div>
+    <div class="dg_section_benefits">
+      <img src="img/image_intro.jpg" alt="" />
+    </div>
+    <div class="dg_section_footer"></div>
+    <script src="script/script.js"></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/wicg-inert@latest/dist/inert.min.js"></script>
+  </body>
+</html>
